@@ -31,6 +31,38 @@ var lowercasePrompt = confirm("Would you like to include lowercase characters in
 //Special characters prompt
 var specialcharactersPrompt = confirm("Would you like to include any special characters in your password? eg. !££$%^ etc");
 
+if (numbersPrompt ==true){
+  choices = choices.concat(numberlist);
+}
+
+if(lowercasePrompt ==true){
+  choices = choices.concat(lowers);
+}
+
+if (uppercasePrompt==true){
+  choices = choices.concat(capitals);
+}
+
+if (specialcharactersPrompt==true){
+  choices = choices.concat(specials);
+}
+
+if(
+  lowercasePrompt == false &&
+  uppercasePrompt == false &&
+  specialcharactersPrompt == false &&
+  numbersPrompt == false
+){
+  alert("Please select at least one of the options.");
+}
+console.log(choices);
+
+var results = "";
+
+for (let i = 0, n = choices.length; i < parseInt(passwordlength); i ++){
+  results += choices[Math.floor(Math.random() * n)];
+}
+return results;
 }
  
 // Write password to the #password input
