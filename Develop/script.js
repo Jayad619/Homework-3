@@ -20,7 +20,7 @@ if (passwordlength < 8 || passwordlength > 128){
   generatePassword();
 }
 //Number criteria prompt
-var numbersPrompt = confirm("Would you like numbers in your new password?");
+var numbersPrompt = confirm("Are you ok to have numbers in your new password?");
 
 //Uppercase prompt
 var uppercasePrompt = confirm("Would you like to include uppercase characters in your new password?");
@@ -29,7 +29,7 @@ var uppercasePrompt = confirm("Would you like to include uppercase characters in
 var lowercasePrompt = confirm("Would you like to include lowercase characters in your new password?");
 
 //Special characters prompt
-var specialcharactersPrompt = confirm("Would you like to include any special characters in your password? eg. !££$%^ etc");
+var specialcharactersPrompt = confirm("Are you ok with having special characters in your new password? eg. !££$%^ etc");
 
 if (numbersPrompt ==true){
   choices = choices.concat(numberlist);
