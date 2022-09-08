@@ -14,3 +14,5 @@ For this assignment I had to make a password generator for my first Javascript p
 
 Deployed link: https://jayad619.github.io/Homework-3/
 
+<img width="1512" alt="Screenshot 2022-09-08 at 12 59 51" src="https://user-images.githubusercontent.com/102623563/189116665-c29b9b7a-f253-4009-838c-b235d39ec632.png">
+
